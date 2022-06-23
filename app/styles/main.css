@@ -4,13 +4,14 @@
 }
 
 .window-bar {
-    height: 30px;
-    background-color: #222629
+    height: 32px;
+    background-color: #222629;
+    -webkit-app-region:drag;
 }
 
 .window-button {
     height: 30px;
-    width: 30px;
+    width: 40px;
     background-color: #222629;
     color: #6B6E70;
     border:none;
