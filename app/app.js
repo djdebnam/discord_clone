@@ -1,14 +1,16 @@
 const {app, BrowserWindow} = require('electron')
 
+try{
+    require('electron-reloader')(module)
+} catch (_) {}
+
 const createWindow = () => {
     const win = new BrowserWindow({
-        width: 800,
+        width: 900,
         height: 600,
-        frame: false
+        frame: true
     })
     win.loadFile('index.html')
 }
 
-app.whenReady().then(() => {
-    createWindow()
-})
+app.whenReady().then(() => createWindow())
