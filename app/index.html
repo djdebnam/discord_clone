@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="./styles/main.css">
     <head>
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <meta charset="UTF-8"> 
         <meta http-equiv="Content-Security-Policy" ><!--content="default-src 'self'; script-src 'self'"-->
         <title>Discord Clone</title>
     </head>
-    <body style="font-size:0"> 
-        <div style="height: 100vh; width:20%; background:#61892F; display:inline-block; padding:0; margin:0"></div>
-        <div style="height: 100vh; width:20%; background:#86C232; display:inline-block; padding:0; margin:0"></div>
-        <div style="height: 100vh; width:20%; background:#222629; display:inline-block; padding:0; margin:0"></div>
-        <div style="height: 100vh; width:20%; background:#474B4F; display:inline-block; padding:0; margin:0"></div>
-        <div style="height: 100vh; width:20%; background:#6B6E70; display:inline-block; padding:0; margin:0"></div>
+    <body> 
+        <div class="window-bar">
+            <!-- <div style="height: 40px;">Discord Clone</div> -->
+            <div class="window-button-section">
+                <button class="window-button"><i class="fa fa-window-minimize" ></i></button>
+                <button class="window-button"><i class="fa fa-window-restore" ></i></button>
+                <button class="window-button window-button-close"><i class="fa-solid fa-x" ></i></button>
+
+            </div>
+        </div>
+        <div style="font-size:0">
+            <div style="height: calc(100vh - 30px); width:20%; background:#61892F; display:inline-block; padding:0; margin:0"></div>
+            <div style="height: calc(100vh - 30px); width:20%; background:#86C232; display:inline-block; padding:0; margin:0"></div>
+            <div style="height: calc(100vh - 30px); width:20%; background:#222629; display:inline-block; padding:0; margin:0"></div>
+            <div style="height: calc(100vh - 30px); width:20%; background:#474B4F; display:inline-block; padding:0; margin:0"></div>
+            <div style="height: calc(100vh - 30px); width:20%; background:#6B6E70; display:inline-block; padding:0; margin:0"></div>
+        </div>
+
+        <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
     </body>
 </html>

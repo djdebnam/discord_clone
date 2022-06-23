@@ -2,3 +2,29 @@
     padding: 0;
     margin: 0;
 }
+
+.window-bar {
+    height: 30px;
+    background-color: #222629
+}
+
+.window-button {
+    height: 30px;
+    width: 30px;
+    background-color: #222629;
+    color: #6B6E70;
+    border:none;
+}
+
+.window-button-close:hover {
+    background-color: #971F0E !important;
+    color: white !important;
+}
+
+.window-button:hover {
+    background-color: #3E4144
+}
+
+.window-button-section {
+    text-align:right
+}

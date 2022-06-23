@@ -8,7 +8,7 @@ const createWindow = () => {
     const win = new BrowserWindow({
         width: 900,
         height: 700,
-        frame: true
+        frame: false
     })
     win.loadFile('index.html')
 }
