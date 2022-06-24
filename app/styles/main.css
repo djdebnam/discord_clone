@@ -17,7 +17,7 @@
     width: calc(100% - 70px);
     background-color: #35383B;
     display: inline-block;
-    border-radius:10px 0 0 0;
+    border-radius:10px 0 0 10px;
 }
 
 #side-bar {
@@ -32,5 +32,23 @@
     background-color: #222629;
     -webkit-app-region:drag;
     -webkit-app-region:selectable;
+}
+
+.server-button {
+    border-radius: 30px;
+    background-color: #35383B;
+    height: 50px;
+    width: 50px; 
+    border: none;
+    text-align: center;
+    color: white;
+    position:absolute;
+    top: 42px;
+    left: 10px;
+}
+.server-button:hover {
+    color: white;
+    background-color: #116466;
+    
 }
 
