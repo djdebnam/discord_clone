@@ -1,9 +1,33 @@
+:root {
+    --side-bar-height: calc(100vh - 32px);
+}
+
 * { 
     padding: 0;
     margin: 0;
 }
+#app-body {
+    background-color: #2C2F31;
+}
+#container {
+    font-size:0;
+}
+#content {
+    height: var(--side-bar-height);
+    width: calc(100% - 70px);
+    background-color: #35383B;
+    display: inline-block;
+    border-radius:10px 0 0 0;
+}
 
-.title-bar {
+#side-bar {
+    width: 70px;
+    height: var(--side-bar-height);
+    background-color: #2C2F31;
+    display: inline-block;
+}
+
+#title-bar {
     height: 32px;
     background-color: #222629;
     -webkit-app-region:drag;
