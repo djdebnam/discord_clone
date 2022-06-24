@@ -18,6 +18,7 @@
     background-color: #35383B;
     display: inline-block;
     border-radius:10px 0 0 10px;
+    margin-left: 70px;
 }
 
 #side-bar {
@@ -25,7 +26,8 @@
     height: var(--side-bar-height);
     background-color: #2C2F31;
     display: inline-block;
-}
+    position: fixed;
+} 
 
 #title-bar {
     height: 32px;
@@ -42,9 +44,8 @@
     border: none;
     text-align: center;
     color: white;
-    position:absolute;
-    top: 42px;
-    left: 10px;
+    display: block;
+    margin: 10px; 
 }
 .server-button:hover {
     color: white;
