@@ -22,10 +22,10 @@
     width: calc(100% - var(--side-bar-width));
     background-color: #35383B;
     display: inline-block;
-    border-radius:10px 0 0 10px;
+    border-radius:10px 0 0 0;
     margin-left: 70px;
     position: fixed; 
-    padding: 1rem;
+    padding-left: 1rem;
 }
 
 #side-bar {
@@ -82,3 +82,27 @@
     box-shadow: 0 1rem 2rem rgba(black)
 }
 
+#user-button-container {
+    position: fixed; 
+    bottom: 0px; 
+    width: 70px; 
+    height: 70px;
+}
+
+#user-button {
+    position:fixed; 
+    width: 40px; 
+    bottom: 10px; 
+    left: 15px; 
+    z-index: 3; 
+    height: 40px; 
+    border-radius: 30px; 
+    border:none;
+    background-color:var(--side-bar-color);
+    transition: all .2s;
+}
+
+#user-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black, .2);
+}
