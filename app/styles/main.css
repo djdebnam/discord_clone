@@ -2,8 +2,8 @@
     --side-bar-height: calc(100vh - 32px);
     --side-bar-width: 70px;
     --side-bar-color: #2C2F31;
-    --primary-color: #fff5a1;
-    --accent-color: #91c8ff;
+    --primary-color: #91c8ff;
+    --secondary-color: #ffc891;
 }
 
 * { 
@@ -59,14 +59,14 @@
 
 .server-button:hover {
     color: black;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(black)
 }
 
 .new-server-button {
     border-radius: 30px;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     height: 50px;
     width: 50px;
     border: none;
@@ -76,6 +76,7 @@
     font-weight:bold;
     transition: all .2s;
 }
+
 .new-server-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(black)
