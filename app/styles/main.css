@@ -6,12 +6,15 @@
     padding: 0;
     margin: 0;
 }
+
 #app-body {
     background-color: #2C2F31;
 }
+
 #container {
-    font-size:0;
+    /* font-size:0; */
 }
+
 #content {
     height: var(--side-bar-height);
     width: calc(100% - 70px);
@@ -19,6 +22,8 @@
     display: inline-block;
     border-radius:10px 0 0 10px;
     margin-left: 70px;
+    position: fixed; 
+    padding: 1rem;
 }
 
 #side-bar {
@@ -47,9 +52,10 @@
     display: block;
     margin: 10px; 
 }
+
 .server-button:hover {
     color: white;
-    background-color: #116466;
+    background-color: #45a29e;
     
 }
 
