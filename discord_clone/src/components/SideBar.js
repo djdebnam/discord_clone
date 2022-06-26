@@ -3,6 +3,8 @@ const SideBar = () => {
   return (
     <div>
         <div id="side-bar">
+            <button id="home-button"><FaHome id="home-button-icon"/></button>
+            <p id="button-seperator"></p>
             <button class="new-server-button"><FaPlus/></button>
             <div id="user-button-holder-primary"></div>
             <div id="user-button-holder-secondary"></div>
