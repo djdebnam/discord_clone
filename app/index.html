@@ -1,43 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="./styles/bootstrap.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
-        <link rel="stylesheet" href="./styles/main.css">
+  <head>
+    <link rel="stylesheet" href="./styles/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
 
-        <meta charset="UTF-8"> 
-        <meta http-equiv="Content-Security-Policy" >
-        <title>Disclone</title>
-    </head>
-    <body id="app-body"> 
-        <div id="title-bar"> 
-            <div style="color:var(--primary-color); font-size: 1rem; padding:.5rem; font-weight:bold; text-align:center">Disclone</div>
-        </div>
- 
-            <div id="side-bar">
-                <div>
-                    <button class="server-button">D</button>
-                    <button class="server-button" >M</button>
-                    <button class="server-button">K</button>
-                    <button class="new-server-button"><i class="fa fa-plus"></i></button>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" />
+    <title>Disclone</title>
+  </head>
+  <body id="app-body">
+    <div id="root"></div>
+    <div id="title-bar">
+      <div
+        style="
+          color: var(--primary-color);
+          font-size: 1rem;
+          padding: 0.5rem;
+          font-weight: bold;
+          text-align: center;
+        "
+      >
+        Disclone
+      </div>
+    </div>
 
+    <div id="side-bar">
+      <div>
+        <button class="server-button">D</button>
+        <button class="server-button">M</button>
+        <button class="server-button">K</button>
+        <button class="new-server-button"><i class="fa fa-plus"></i></button>
 
-                    <div style="position: fixed; bottom: 0px; width: 70px; height:70px; border-radius: 0 180px  0 0; border: none; background-color: var(--primary-color); z-index:2"></div>
-                    <div style="position: fixed; bottom: 0px; width: 70px; height:70px; border-radius: 180px 0 0 0; border: none; background-color: var(--secondary-color)"></div>
-                   
-                    <button id="user-button"><i class="fa-regular fa-user" style="font-size:15px; color:white"></i></button>
-                </div>
-            </div>
-            <div id="container">
-                <!-- <div class="row">
-                    <div class="col-3"; style="background-color:white; height:100vh"></div>
-                </div>  -->
-            </div> 
+        <div
+          style="
+            position: fixed;
+            bottom: 0px;
+            width: 70px;
+            height: 70px;
+            border-radius: 0 180px 0 0;
+            border: none;
+            background-color: var(--primary-color);
+            z-index: 2;
+          "
+        ></div>
+        <div
+          style="
+            position: fixed;
+            bottom: 0px;
+            width: 70px;
+            height: 70px;
+            border-radius: 180px 0 0 0;
+            border: none;
+            background-color: var(--secondary-color);
+          "
+        ></div>
 
-        
-        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-        <script src="./components/home_page.js"></script>
-        <script src="./scripts/bootstrap.js"></script>
-    </body>
+        <button id="user-button">
+          <i
+            class="fa-regular fa-user"
+            style="font-size: 15px; color: white"
+          ></i>
+        </button>
+      </div>
+    </div>
+    <div id="container">
+     
+    </div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="./components/home_page.js"></script>
+    <script src="./scripts/bootstrap.js"></script>
+  </body>
 </html>

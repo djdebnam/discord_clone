@@ -1,4 +1,4 @@
-const {app, BrowserWindow, ipcMain} = require('electron')
+const {app, BrowserWindow, ipcMain} = require('electron') 
 
 //dev dependencies
 try{
@@ -8,8 +8,10 @@ try{
 
 const createWindow = () => {
     const win = new BrowserWindow({
-        width: 900,
+        width: 1000,
         height: 700,
+        minHeight: 500,
+        minWidth: 900,
         titleBarStyle: 'hidden', 
         titleBarOverlay: {
             color: '#222629',
