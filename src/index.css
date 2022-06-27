@@ -176,3 +176,124 @@
   /* color: #6B6E70; */
   /* background-color: transparent; */
 }
+
+.accent-primary {
+  position: fixed;
+  left: 0;
+  top: 32px;
+  height: 70vh;
+  width: 70vh;
+  border-radius: 0 0 100%  0;
+  background-color: var(--primary-color); 
+}
+.accent-secondary {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 70vh;
+  width: 70vh;
+  border-radius: 100% 0 0   0;
+  background-color: var(--secondary-color);
+}
+.overlay {
+  height: calc(100vh - 32px);
+  position: fixed;
+  width: 100%;
+  background-color: #222629;
+  opacity: 0.9;
+  z-index: 3;
+}
+
+#login-container {
+  height: 400px; 
+  width: 400px;
+  z-index: 4;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  border-radius: 5px;
+  background-color: #2c2f31;
+  transform: translate(-50%,-50%);
+  
+}
+
+#login-header {
+  color: white;
+  margin-top: 40px
+}
+
+#login-subheader {
+  color: darkgray;
+  margin-top: 10px;
+}
+
+#login-email {
+  border: none;
+  border-radius: 3px;
+  border-width: 2px;
+  background-color: #212325;
+  width: 90%;
+  height: 35px;
+  margin-top: 10px;
+  color: white;
+}
+
+#login-email-title {
+  margin-top: 25px;
+  text-align: left;
+  margin-left: 5%;
+  color: white;
+  text-transform: uppercase;
+}
+
+#login-password {
+  border: none;
+  border-radius: 3px;
+  border-width: 2px;
+  background-color: #212325;
+  width: 90%;
+  height: 35px;
+  margin-top: 10px;
+  color: white;
+} 
+
+#login-password-title {
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 5%;
+  color: white;
+  text-transform: uppercase;
+}
+
+#login-button {
+  width: 90%;
+  height: 35px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+}
+.login-links {
+  
+
+}
+.login-links a { 
+  color: var(--primary-color);
+  text-decoration: none; 
+  margin-top: 10px;
+  color: var(--primary-color);
+  text-align: left;
+  margin-left: 5%;
+  font-size: 12px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 5px
+}
+.login-links a:hover {
+  text-decoration: underline; 
+}
+.primary-color-button:hover {
+  background-color: #7FAFDF !important;
+}
