@@ -22,7 +22,7 @@ const Login = () => {
         </Link>
         <div className="login-links">
           <a href="/">Forgot Password?</a>
-          <a href="/">Create Account</a>
+          <a href="/createaccount">Create Account</a>
         </div>
       </div>
       <div id="login-container-background-primary"></div>
