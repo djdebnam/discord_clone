@@ -17,7 +17,7 @@ const CreateAccount = () => {
         <input id="create-password" type="password"></input>
         <div id="create-password-title2">Re-type Password</div>
         <input id="create-password2" type="password"></input>
-        <Link to="/dashboard">
+        <Link to="/dashboard/home">
           <button id="create-button" className="primary-color-button">
             Create Account
           </button>
