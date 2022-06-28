@@ -69,15 +69,18 @@
   font-weight: bold;
   font-size: 15px;
 }
+
 #home-button:hover {
   color: black;
   background-color: var(--secondary-color);
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(black);
 }
+
 #home-button-icon {
   font-size: 15px;
 }
+
 .server-button {
   border-radius: 30px;
   background-color: #35383b;
@@ -143,10 +146,12 @@
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(black, 0.2);
 }
+
 #user-button-icon {
   font-size: 15px;
   
 }
+
 #user-button-holder-primary {
   position: fixed;
   bottom: 0px;
@@ -186,6 +191,7 @@
   border-radius: 0 0 100%  0;
   background-color: var(--primary-color);  
 }
+
 .accent-secondary {
   position: fixed;
   right: 0;
@@ -195,6 +201,7 @@
   border-radius: 100% 0 0   0;
   background-color: var(--secondary-color);
 }
+
 .overlay {
   height: calc(100vh - 32px);
   position: fixed;
@@ -216,6 +223,7 @@
   transform: translate(-50%,-50%);
   box-shadow: 5px 5px 5px 0 #2c2f31;
 }
+
 #login-container-background-primary{
   height: 400px; 
   width: 400px;
@@ -288,6 +296,7 @@
   border-radius: 3px;
   border: none;
 }
+
 .create-links a { 
   color: var(--primary-color);
   text-decoration: none; 
@@ -300,6 +309,7 @@
   grid-auto-flow: row;
   grid-row-gap: 5px
 }
+
 .create-links a:hover {
   text-decoration: underline; 
 }
@@ -315,6 +325,7 @@
   transform: translate(-50%,-50%);
   box-shadow: 5px 5px 5px 0 #2c2f31;
 }
+
 #create-container-background-primary{
   height: 420px; 
   width: 400px;
@@ -407,6 +418,7 @@
   border-radius: 3px;
   border: none;
 }
+
 .login-links a { 
   color: var(--primary-color);
   text-decoration: none; 
@@ -419,9 +431,11 @@
   grid-auto-flow: row;
   grid-row-gap: 5px
 }
+
 .login-links a:hover {
   text-decoration: underline; 
 }
+
 .primary-color-button:hover {
   background-color: #7FAFDF !important;
 }
