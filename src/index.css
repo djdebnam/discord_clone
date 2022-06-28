@@ -184,7 +184,7 @@
   height: 70vh;
   width: 70vh;
   border-radius: 0 0 100%  0;
-  background-color: var(--primary-color); 
+  background-color: var(--primary-color);  
 }
 .accent-secondary {
   position: fixed;
@@ -214,12 +214,23 @@
   border-radius: 5px;
   background-color: #2c2f31;
   transform: translate(-50%,-50%);
-  
+  box-shadow: 5px 5px 5px 0 #2c2f31;
+}
+#login-container-background-primary{
+  height: 400px; 
+  width: 400px;
+  z-index: 3;
+  position: fixed;
+  top: calc(50vh + 15px);
+  left: calc(50vw + 15px);
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  transform: translate(-50%,-50%);
 }
 
 #login-header {
   color: white;
-  margin-top: 40px
+  margin-top: 40px;
 }
 
 #login-subheader {
@@ -244,6 +255,7 @@
   margin-left: 5%;
   color: white;
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 #login-password {
@@ -263,6 +275,7 @@
   margin-left: 5%;
   color: white;
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 #login-button {

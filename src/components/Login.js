@@ -25,6 +25,7 @@ const Login = () => {
           <a href="/">Create Account</a>
         </div>
       </div>
+      <div id="login-container-background-primary"></div>
     </div>
   );
 };
