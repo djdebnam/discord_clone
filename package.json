@@ -27,6 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron:serve": "concurrently -k \"cross-env BROWSER=none npm start\" \"wait-on tcp:3000 && electron .\"",
+    "go:run": "cd backend/go/main && go run .",
     "electron:build": ""
   },
   "browserslist": {
