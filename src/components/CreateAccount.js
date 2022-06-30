@@ -4,10 +4,10 @@ import axios from "axios";
 import React from "react";
 export default class CreateAccount extends React.Component{
   state = {
-    username: 'test',
-    password: 'test',
-    phone: 'test',
-    email: 'test'
+    username: '',
+    password: '',
+    phone: '',
+    email: ''
   }
 
   handleUsernameChange = event => {
