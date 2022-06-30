@@ -4,13 +4,15 @@ import axios from "axios";
 import React from "react";
 export default class CreateAccount extends React.Component{
   state = {
-    email: '',
-    password: ''
+    username: 'test',
+    password: 'test',
+    phone: 'test',
+    email: 'test'
   }
 
   handleUsernameChange = event => {
     console.log("Update")
-    this.setState({ email: event.target.value })
+    this.setState({ username: event.target.value })
   }
 
   handlePasswordChange = event => {
@@ -19,17 +21,22 @@ export default class CreateAccount extends React.Component{
   }
 
 
-  PostAccount = event => {
+  PostAccount = async event => {
+    const headers = {
+      //'Content-Type': 'application/json',
+      'Content-Length': JSON.stringify(this.state).length
+    }
     console.log("POST")
-    axios.post("localhost:9090/createaccount", {
-      username: this.state.email, 
-      password: this.state.password, 
-      phone: "", 
-      email: ""
+    await axios.post("http://localhost:9090/createaccount", this.state, {
+      headers: headers
     }).then((response) => {
       console.log(response.status);
-      print(response.data);
     })
+
+    // await fetch("http://localhost:9090/createaccount", {
+    //   method: 'POST',
+    //   body: JSON.stringify(this.state)
+    // });
   }
 
   render() {
