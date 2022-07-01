@@ -26,7 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron:serve": "concurrently -k \"cross-env BROWSER=none npm start\" \"wait-on tcp:3000 && electron .\"",
+    "electron:serve": "concurrently -k \"npm run go:run\" \"cross-env BROWSER=none npm start\" \"wait-on tcp:3000 && electron .\"",
     "go:run": "cd backend/go/main && go run .",
     "go:build": "cd backend/go/main && go mod tidy",
     "go:clean": "cd backend/go/main && go clean --modcache",
