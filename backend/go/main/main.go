@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/MicahKimel/GoRedis/handlers"
-	myjwt "github.com/MicahKimel/GoRedis/jwt"
+	"github.com/djdebnam/discord_clone/backend/go/handlers"
+	myjwt "github.com/djdebnam/discord_clone/backend/go/jwt"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/golang-jwt/jwt"
 	"github.com/gorilla/mux"

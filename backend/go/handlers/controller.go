@@ -23,8 +23,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/MicahKimel/GoRedis/data"
-	"github.com/MicahKimel/GoRedis/jwt"
+	"github.com/djdebnam/discord_clone/backend/go/data"
+	"github.com/djdebnam/discord_clone/backend/go/jwt"
 	"github.com/go-redis/redis/v8"
 	_ "github.com/go-sql-driver/mysql"
 )

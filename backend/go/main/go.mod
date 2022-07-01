@@ -3,13 +3,14 @@ module backend
 go 1.18
 
 require (
-	github.com/MicahKimel/GoRedis v0.0.0-20220630190227-f5a04395a733
+	github.com/djdebnam/discord_clone v0.0.0-20220630205704-b8b54c16c555
 	github.com/go-openapi/runtime v0.24.1
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/gorilla/mux v1.8.0
 )
 
 require (
+	github.com/MicahKimel/GoRedis v0.0.0-20220630190227-f5a04395a733 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
@@ -31,4 +32,5 @@ require (
 	github.com/oklog/ulid v1.3.1 // indirect
 	go.mongodb.org/mongo-driver v1.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
