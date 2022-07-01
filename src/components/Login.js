@@ -15,7 +15,7 @@ const Login = () => {
         <input id="login-email" type="text"></input>
         <div id="login-password-title">Password</div>
         <input id="login-password" type="password"></input>
-        <Link to="/dashboard">
+        <Link to="/dashboard/home">
           <button id="login-button" className="primary-color-button">
             Login
           </button>

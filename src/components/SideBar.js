@@ -4,9 +4,11 @@ const SideBar = () => {
   return (
     <div>
       <div id="side-bar">
-        <button id="home-button">
-          <FaHome id="home-button-icon" />
-        </button>
+        <Link to="/dashboard/home">
+          <button id="home-button">
+            <FaHome id="home-button-icon" />
+          </button>
+        </Link>
         <div id="button-seperator"></div>
         <button className="server-button">D</button>
         <button className="server-button">M</button>
