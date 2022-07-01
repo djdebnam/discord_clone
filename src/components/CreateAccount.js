@@ -11,19 +11,16 @@ export default class CreateAccount extends React.Component{
   }
 
   handleUsernameChange = event => {
-    console.log("Update")
     this.setState({ username: event.target.value })
   }
 
   handlePasswordChange = event => {
-    console.log("Update")
     this.setState({ password: event.target.value })
   }
 
 
   PostAccount = async event => {
     const headers = {
-      //'Content-Type': 'application/json',
       'Content-Length': JSON.stringify(this.state).length
     }
     console.log("POST")

@@ -9,19 +9,21 @@ export default class CreateAccount extends React.Component{
   }
 
   handleUsernameChange = event => {
-    console.log("Update")
     this.setState({ user: event.target.value })
   }
 
   handlePasswordChange = event => {
-    console.log("Update")
     this.setState({ password: event.target.value })
   }
 
 
   Login = async event => {
     console.log("GET")
-    await axios.get("http://localhost:9090/authenticate", this.state)
+    var url = "http://localhost:9090/authenticate" + 
+    "?user=" + this.state.user + 
+    "&password=" + this.state.password
+    console.log(url)
+    await axios.get(url)
     .then((response) => {
       console.log(response.status);
       console.log(response.data);
