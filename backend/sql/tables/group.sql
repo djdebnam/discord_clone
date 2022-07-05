@@ -1,4 +1,4 @@
-CREATE TABLE `Groups` (
+CREATE TABLE `groups` (
   `idGroup` int NOT NULL AUTO_INCREMENT,
   `idUser` int NOT NULL,
   `name` varchar(45) NOT NULL,
