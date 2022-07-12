@@ -1,0 +1,15 @@
+USE `db`;
+DROP procedure IF EXISTS `get_user_groups`;
+
+DELIMITER $$
+USE `db`$$
+CREATE PROCEDURE `get_user_groups` (
+	IN username VARCHAR(45)
+)
+BEGIN
+	select idGroup, idUser, name from db.users 
+    left join db.group on idUser = idUser
+    where username = username 
+END$$
+
+DELIMITER ;
