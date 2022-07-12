@@ -15,7 +15,7 @@ type User struct {
 type Users []*User
 
 type Group struct {
-	name string `json:"name"`
+	Name string `json:"name"`
 }
 
 type Groups []*Group
