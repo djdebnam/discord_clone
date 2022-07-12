@@ -14,6 +14,12 @@ type User struct {
 
 type Users []*User
 
+type Group struct {
+	name string `json:"name"`
+}
+
+type Groups []*Group
+
 func (u *Users) ToJSON(w io.Writer) error {
 	e := json.NewEncoder(w)
 	return e.Encode(u)
